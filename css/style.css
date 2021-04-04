@@ -368,9 +368,14 @@ template {
 button {
   outline: none;
   border: none;
+  cursor: pointer;
   background-color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+p {
+  margin: 0;
 }
 
 *,
@@ -378,6 +383,10 @@ button {
 *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gotham Pro Regular';
 }
 
 .container {
@@ -397,10 +406,37 @@ ul {
   margin: 0;
 }
 
+img {
+  display: block;
+}
+
+.title {
+  font-family: 'Gotham Pro Black';
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.fl-sb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header {
+  padding-bottom: 200px;
   font-size: 14px;
-  padding: 10px 0;
   color: #4A4A4A;
+}
+
+.header-wrapper {
+  padding: 10px 0;
+  margin-bottom: 6px;
 }
 
 .header-wrapper, .header-wrap-logo,
@@ -441,5 +477,68 @@ ul {
   border-radius: 3px;
   padding: 10px 21px;
   color: #4A4A4A;
+}
+
+.header-btn:hover {
+  -webkit-box-shadow: 0 0 5px #4A4A4A;
+          box-shadow: 0 0 5px #4A4A4A;
+}
+
+.header-content {
+  margin-bottom: 34px;
+}
+
+.header-title {
+  max-width: 737px;
+  margin-right: 70px;
+  margin-bottom: 40px;
+}
+
+.header-cont-btn {
+  font-family: 'Gotham Pro Bold';
+  border-radius: 3px;
+  padding: 15px 20px;
+  background: #fd7100;
+  color: #fff;
+  line-height: 15px;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.header-cont-btn span {
+  font-family: 'Gotham Pro Regular';
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.header-cont-btn:hover {
+  background: #FF8A2C;
+}
+
+.header-cont-desc {
+  font-size: 18px;
+}
+
+.header-cont-desc span {
+  color: #FF8A2C;
+}
+
+.header-chart {
+  width: 713px;
+  height: 344px;
+  background-color: #646464;
+}
+
+.header-awards-block {
+  font-size: 10px;
+  line-height: 10px;
+}
+
+.header-awards-block-text {
+  max-width: 128px;
+  text-align: center;
+  margin: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,10 @@
 .header
+  padding-bottom: 200px
   font-size: 14px
-  padding: 10px 0
   color: $greyPrimary
+  &-wrapper
+    padding: 10px 0
+    margin-bottom: 6px
   &-wrapper,
   &-wrap-logo,
   &-nav ul
@@ -25,3 +28,50 @@
     border-radius: 3px
     padding: 10px 21px
     color: $greyPrimary
+    &:hover
+      box-shadow: 0 0 5px $greyPrimary
+
+
+  &-content
+    margin-bottom: 34px
+  &-title
+    max-width: 737px
+    margin-right: 70px
+    margin-bottom: 40px
+  &-cont
+    &-btn
+      +bold
+      border-radius: 3px
+      padding: 15px 20px
+      background: darken($mainColor, 9%)
+      color: #fff
+      line-height: 15px
+      font-size: 16px
+      margin-bottom: 18px
+      span
+        +regular
+        display: block
+        margin-top: 5px
+        font-size: 14px
+        line-height: 13px
+      &:hover
+        background: $mainColor
+    &-desc
+      font-size: 18px
+      span
+        color: $mainColor
+  &-chart
+    width: 713px
+    height: 344px
+    background-color: lighten($greyPrimary, 10%)
+  
+
+
+  &-awards
+    &-block
+      font-size: 10px
+      line-height: 10px
+      &-text
+        max-width: 128px
+        text-align: center
+        margin: 0 10px
