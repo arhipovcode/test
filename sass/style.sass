@@ -10,6 +10,7 @@
   box-sizing: border-box
 body
   +regular
+  color: $greyPrimary
 .container
   width: 1400px
   margin: 0 auto
@@ -22,13 +23,31 @@ ul
   margin: 0
 img
   display: block
+h1,h2,h3,h4,h5,h6
+  margin: 0
 .title
   +black
   font-weight: 900
   font-size: 40px
+.section-title
+  +bold
+  color: $greyPrimary
+  font-size: 32px
+  line-height: 37px
 .fl-sb
   display: flex
   align-items: center
   justify-content: space-between
 
 @import 'header'
+@import 'invest'
+@import 'scope'
+@import 'best'
+@import 'profitable'
+@import 'free'
+@import 'interview'
+@import 'about'
+@import 'max'
+@import 'up-account'
+@import 'faq'
+@import 'footer'

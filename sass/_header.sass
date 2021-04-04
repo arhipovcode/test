@@ -23,6 +23,8 @@
       height: 3px
       background-color: $greyPrimary
       display: inline-block
+    &:hover
+      color: $mainColor
   &-btn
     border: 1px solid $greyPrimary
     border-radius: 3px
@@ -39,23 +41,6 @@
     margin-right: 70px
     margin-bottom: 40px
   &-cont
-    &-btn
-      +bold
-      border-radius: 3px
-      padding: 15px 20px
-      background: darken($mainColor, 9%)
-      color: #fff
-      line-height: 15px
-      font-size: 16px
-      margin-bottom: 18px
-      span
-        +regular
-        display: block
-        margin-top: 5px
-        font-size: 14px
-        line-height: 13px
-      &:hover
-        background: $mainColor
     &-desc
       font-size: 18px
       span
@@ -63,8 +48,12 @@
   &-chart
     width: 713px
     height: 344px
-    background-color: lighten($greyPrimary, 10%)
-  
+    background-color: lighten($greyPrimary, 30%)
+
+    display: flex
+    align-items: center
+    justify-content: center
+
 
 
   &-awards

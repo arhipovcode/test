@@ -1,0 +1,50 @@
+.faq
+  padding-bottom: 120px
+  &-title
+    margin-bottom: 1px
+  &-desc
+    margin-bottom: 50px
+    max-width: 680px
+    font-size: 18px
+    line-height: 21px
+  &-link-email
+    color: $greyPrimary
+    &:hover
+      color: $mainColor
+  &-accordion
+    &-text
+      max-width: 800px
+      font-size: 18px
+      line-height: 21px
+      &-visible
+        position: relative
+        cursor: pointer
+        margin-bottom: 20px
+        span
+          position: absolute
+          top: 50%
+          right: 0
+          transform: translateY(-50%)
+          width: 15px
+          height: 2px
+          background-color: $greyPrimary
+          transition: 0.2s
+        .vertical
+          transform: translateY(-50%) rotate(90deg)
+        .span-hide
+          transform: translateY(-50%) rotate(0deg)
+          height: 0
+      &-hide
+        max-height: 0
+        overflow: hidden
+        color: lighten($greyPrimary, 40%)
+        transition: 0.5s
+    &__link
+      color: $greyPrimary
+      text-decoration: underline
+      &:hover
+        color: $mainColor
+
+.visible
+  height: auto
+  margin-bottom: 20px

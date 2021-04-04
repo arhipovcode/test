@@ -6,3 +6,24 @@ button
   transition: 0.5s
 p
   margin: 0
+
+.header-cont-btn,
+.invest-btn
+  +bold
+  text-transform: uppercase
+  border-radius: 3px
+  padding: 15px 18px
+  background: darken($mainColor, 9%)
+  color: #fff
+  line-height: 15px
+  font-size: 16px
+  margin-bottom: 18px
+  span
+    +regular
+    text-transform: capitalize
+    display: block
+    margin-top: 5px
+    font-size: 14px
+    line-height: 13px
+  &:hover
+    background: $mainColor
