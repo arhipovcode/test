@@ -1,0 +1,142 @@
+.modal
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  background-color: rgba(0, 0, 0, 0.5)
+  opacity: 0
+  visibility: hidden
+  transition: all 0.5s
+  z-index: 10
+  &-active
+    opacity: 1
+    visibility: visible
+    .popup-form
+      transform: perspective(600px) translate(0px, 0%) rotateX(0deg)
+
+.popup
+  &-form
+    position: relative
+    text-align: center
+    background-color: #fff
+    border-radius: 3px
+    padding: 75px 60px
+    max-width: 688px
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg)
+    transition: all 0.5s
+    &-title
+      +bold
+      font-size: 28px
+      margin-bottom: 7px
+    &-desc
+      max-width: 568px
+      font-size: 24px
+      line-height: 35px
+      margin-bottom: 60px
+  &-closed
+    position: absolute
+    width: 27px
+    top: 26px
+    right: 27px
+    cursor: pointer
+    img
+      width: 100%
+  &-wrapper-inp
+    text-align: left
+    label
+      font-size: 16px
+      margin-bottom: 5px
+      display: inline-block
+  &-reg-form
+  &-input
+    width: 100%
+    border: 1px solid #000000
+    box-sizing: border-box
+    border-radius: 3px
+    padding: 20px 40px
+    margin-bottom: 36px
+    &::placeholder
+      font-size: 18px
+      color: lighten($greyPrimary, 50%)
+
+  &-btn
+    text-transform: uppercase
+    padding: 20px 0
+    width: 380px
+    background: #E0E0E0
+    border-radius: 3px
+    &:hover
+      // background: $mainColor
+
+@media (max-width: 768px)
+  .popup
+    &-form
+      max-width: 90%
+      padding: 55px 60px
+@media (max-width: 576px)
+  .popup
+    &-input
+      margin-bottom: 20px
+    &-form
+      &-title
+        font-size: 24px
+      &-desc
+        font-size: 20px
+        line-height: 27px
+        margin-bottom: 30px
+@media (max-width: 576px)
+  .popup
+    &-input
+      padding: 17px 30px
+    &-form
+      max-width: 92%
+      padding: 40px
+@media (max-width: 576px)
+  .popup
+    &-btn
+      width: 90%
+    &-closed
+      width: 20px
+    &-wrapper-inp
+      label
+        font-size: 14px
+    &-input
+      padding: 15px 20px
+      &::placeholder
+        font-size: 16px
+    &-form
+      max-width: 92%
+      padding: 40px
+      &-title
+        font-size: 21px
+      &-desc
+        font-size: 18px
+        line-height: 24px
+        margin-bottom: 20px
+@media (max-width: 476px)
+  .popup
+    &-btn
+      width: 100%
+@media (max-width: 380px)
+  .popup
+    &-closed
+      top: 20px
+      right: 20px
+    &-wrapper-inp
+      label
+    &-input
+      &::placeholder
+        font-size: 15px
+    &-form
+      max-width: 92%
+      padding: 40px 20px
+      &-title
+        font-size: 21px
+      &-desc
+        font-size: 17px
+        line-height: 21px
+        margin-bottom: 20px

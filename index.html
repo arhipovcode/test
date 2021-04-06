@@ -42,7 +42,7 @@
                 Акции компании
               </a>
             </li>
-            <li class="header-nav__li">
+            <li class="header-nav__li popup-link">
               <a href="#" class="header-nav__link">
                 <span></span>
                 <span></span>
@@ -677,12 +677,43 @@
       </div>
     </div>
   </footer>
+
+// модальное окно
+  <div class="modal">
+    <div class="popup-form">
+      <div class="popup-closed">
+        <img src="images/closed.png" alt="">
+      </div>
+
+      <div class="popup-form-title">Зарегистрируйтесь</div>
+      <div class="popup-form-desc">чтобы получить демо-доступ на 14 дней к счету с $10 000</div>
+
+      <form action="#" class="popup-reg-form">
+        <div class="popup-wrapper-inp">
+          <label for="name">Фамилия и Имя</label>
+          <input id="name" placeholder="Ivanov Ivan" type="text" name="name" class="popup-input">
+        </div>
+        <div class="popup-wrapper-inp">
+          <label for="name">Номер телефона</label>
+          <input placeholder="+7 9998887766" type="text" name="phone" class="popup-input">
+        </div>
+        <div class="popup-wrapper-inp">
+          <label for="name">e-mail</label>
+          <input placeholder="example@mail.ru" type="text" name="phone" class="popup-input">
+        </div>
+
+        <button type="submit" class="button popup-btn">
+          Заполнено: <span>0%</span>
+        </button>
+      </form>
+    </div>
+  </div>
   
   <script src="js/jquery.min.js"></script>
     
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/carousel.js"></script>
 
-  <script src="js/accordion.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
