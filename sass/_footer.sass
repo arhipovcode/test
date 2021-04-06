@@ -2,9 +2,6 @@
   &-top
     background: $footerBg
     padding: 30px 0
-  .container
-    width: 1170px
-    margin: 0 auto
   &-social__link
     padding: 5px
   .social-block
@@ -39,3 +36,23 @@
       color: $mainColor
   &-text
     max-width: 580px
+
+@media (max-width: 1200px)
+  .footer
+    &-addres
+    &-policy
+      margin: 20px 0
+    &-wrapper
+      text-align: center
+      flex-direction: column
+      align-items: center
+      justify-content: center
+@media (max-width: 768px)
+  .footer .social-block
+    margin: 0 10px
+@media (max-width: 576px)
+  .footer-social
+    flex-wrap: wrap
+    justify-content: center
+  .footer .social-wrapper
+    width: 25%

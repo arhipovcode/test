@@ -64,3 +64,96 @@
         max-width: 128px
         text-align: center
         margin: 0 10px
+
+
+@media (max-width: 1440px)
+  .container
+    width: 1280px
+@media (max-width: 1320px)
+  .container
+    width: 1170px
+  .header
+    &-title
+      font-size: 36px
+      margin-right: 20px
+@media (max-width: 1200px)
+  .container
+    width: 980px
+  .header
+    padding-bottom: 100px
+    &-title
+      font-size: 30px
+    &-logo__link
+      margin-right: 10px
+    &-wrap-logo p
+      text-align: center
+      max-width: 115px
+
+    &-awards
+      flex-wrap: wrap
+      &-block
+        justify-content: center
+        width: 33%
+        margin-bottom: 20px
+
+  .section-title
+    font-size: 27px
+
+
+@media (max-width: 992px)
+  .container
+    width: 760px
+  .header
+    &-wrap-logo p
+      text-align: left
+      max-width: initial
+    &-title
+      font-size: 28px
+    &-nav
+      margin-left: auto
+      margin-right: 20px
+    &-nav__li
+      display: none
+      &:last-child
+        display: block
+    &-chart
+      width: 560px
+      height: 300px
+
+  .section-title
+    font-size: 24px
+@media (max-width: 768px)
+  .container
+    width: 560px
+  .header
+    &-content
+      flex-direction: column
+      margin-top: 20px
+    &-chart
+      width: 100%
+      margin-top: 20px
+@media (max-width: 576px)
+  .container
+    width: 97%
+  .header
+    &-btn
+      display: none
+    &-awards
+      &-block
+        width: 48%
+
+  .section-title
+    font-size: 23px
+    line-height: 28px
+@media (max-width: 476px)
+  .header
+    &-wrap-logo p
+      font-size: 13px
+    &-title
+      font-size: 24px
+    &-nav li
+      margin-right: 0
+    &-cont-desc
+      font-size: 15px
+    &-awards-block
+      width: 100%

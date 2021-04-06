@@ -8,6 +8,7 @@
     margin-bottom: 40px
   &__link
     img
+      width: 100%
       filter: grayscale(1)
       transition: 0.2s
     &:hover
@@ -15,3 +16,15 @@
         filter: grayscale(0)
   &-btn
     width: auto
+
+
+@media (max-width: 992px)
+  .up-account-wrapper
+    flex-wrap: wrap
+@media (max-width: 476px)
+  .up-account
+    &-wrapper
+      justify-content: center
+    &-btn
+      margin: 0 auto
+      display: block

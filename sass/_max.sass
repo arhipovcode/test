@@ -7,7 +7,7 @@
   &-wrapper
     align-items: flex-start
   &-block
-    max-width: 260px
+    max-width: 24%
     &-title
       +bold
       font-size: 24px
@@ -23,3 +23,20 @@
       border-bottom: 1px solid $greyPrimary
       &:hover
         color: $mainColor
+
+
+@media (max-width: 992px)
+  .max
+    &-wrapper
+      flex-wrap: wrap
+    &-block
+      max-width: 35%
+      margin-bottom: 20px
+      &-desc
+        margin-bottom: 10px
+@media (max-width: 576px)
+  .max
+    &-wrapper
+      justify-content: center
+    &-block
+      max-width: 300px
